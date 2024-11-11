@@ -9,13 +9,23 @@ ul {
   list-style-type: none;
 }
 
+body {
+  color: var(--color-primary-dark);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
 /* heder */
 .link-list {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 
 .link-list:hover {
   color: var(--color-brand);
+  font-weight: 600;
 }
 
 .button {
@@ -23,6 +33,8 @@ ul {
   background-color: var(--color-brand);
   border: 2px var(--color-brand);
   border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .button:hover {
@@ -33,22 +45,51 @@ ul {
 /* hero */
 .hero-title {
   color: var(--color-primary-light);
+  font-weight: 900;
+  font-size: 128px;
+  text-align: center;
 }
 
 .hero-title .accent {
   color: var(--color-brand);
 }
 
+/* advantage */
+
+.advantage {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand);
+}
+
+/* advantage-text */
+.advantage-text {
+  font-weight: 300;
+  font-size: 20px;
+}
+
 /* main */
 .main-title {
   color: var(--color-primary-dark);
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
 }
 
 .main-title .accent {
   color: var(--color-brand);
 }
+.accent-dark {
+  color: var(--color-secondary);
+}
 
-.advantage {
-  color: var(--color-primary-light);
-  background-color: var(--color-brand);
+/* section tradition */
+.tradition-text .tradition-accent {
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+.tradition-text .tradition-accent-uppercase {
+  color: var(--color-brand);
+  font-weight: 600;
+  text-transform: uppercase;
 }
