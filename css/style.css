@@ -1,3 +1,44 @@
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/poppins-v21-latin-300.woff2") format("woff2"),
+    url("../fonts/poppins-v21-latin-300.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v21-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins-v21-latin-regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v21-latin-600.woff2") format("woff2"),
+    url("../fonts/poppins-v21-latin-600.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v21-latin-700.woff2") format("woff2"),
+    url("../fonts/poppins-v21-latin-700.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/poppins-v21-latin-900.woff2") format("woff2"),
+    url("../fonts/poppins-v21-latin-900.ttf") format("truetype");
+}
+
 :root {
   --color-brand: #819b57;
   --color-primary-light: #faf4ea;
@@ -15,6 +56,10 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 18px;
+}
+
+address {
+  font-style: normal;
 }
 
 /* heder */
@@ -82,7 +127,7 @@ body {
   color: var(--color-secondary);
 }
 
-/* section tradition */
+/* section-tradition */
 .tradition-text .tradition-accent {
   color: var(--color-brand);
   font-weight: 600;
@@ -92,4 +137,40 @@ body {
   color: var(--color-brand);
   font-weight: 600;
   text-transform: uppercase;
+}
+
+/* section-chef */
+.chef {
+  text-align: center;
+}
+.article-title {
+  font-weight: 600;
+  font-size: 60px;
+}
+
+/* section-frmat */
+.format-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.format-text {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+/* footer */
+
+.address-list {
+  color: var(--color-primary-light);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.address-list:hover {
+  color: var(--color-brand);
+}
+
+.protected {
+  color: #a18268;
 }
