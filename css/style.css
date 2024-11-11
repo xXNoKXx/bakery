@@ -143,6 +143,9 @@ address {
 .chef {
   text-align: center;
 }
+.chef-text {
+  text-transform: uppercase;
+}
 .article-title {
   font-weight: 600;
   font-size: 60px;
