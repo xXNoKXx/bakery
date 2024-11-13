@@ -46,6 +46,11 @@
   --color-secondary: #465929;
 }
 /* global */
+
+* {
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
 }
@@ -56,10 +61,35 @@ body {
   font-weight: 400;
   line-height: 1.5;
   font-size: 18px;
+  margin: 0;
 }
 
 address {
   font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+}
+
+.section {
+  padding: 48px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* heder */
@@ -80,6 +110,7 @@ address {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  padding: 16px 32px;
 }
 
 .button:hover {
@@ -88,6 +119,10 @@ address {
 }
 
 /* hero */
+.hero-section {
+  padding: 272px 0;
+}
+
 .hero-title {
   color: var(--color-primary-light);
   font-weight: 900;
@@ -112,6 +147,10 @@ address {
   font-size: 20px;
 }
 
+.container.advantage {
+  padding: 0px;
+}
+
 /* main */
 .main-title {
   color: var(--color-primary-dark);
@@ -128,6 +167,16 @@ address {
 }
 
 /* section-tradition */
+
+.visibility-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0); /* Скрывает текст за пределами видимой области */
+  width: 1px; /* Уменьшаем размер элемента */
+  height: 1px; /* Уменьшаем размер элемента */
+  margin: 0;
+  padding: 0;
+}
+
 .tradition-text .tradition-accent {
   color: var(--color-brand);
   font-weight: 600;
@@ -137,6 +186,14 @@ address {
   color: var(--color-brand);
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.tradition {
+  padding-top: 96px;
+}
+
+.tradition-title {
+  margin-bottom: 42px;
 }
 
 /* section-chef */
@@ -151,15 +208,30 @@ address {
   font-size: 60px;
 }
 
+.chef-title {
+  margin-bottom: 80px;
+}
+
 /* section-frmat */
-.format-title {
+.formats-title {
   font-weight: 600;
   font-size: 24px;
+  margin-bottom: 16px;
 }
 
 .format-text {
   font-weight: 300;
   font-size: 14px;
+}
+
+.fotmat-title {
+  margin-bottom: 80px;
+}
+
+/* contact-title */
+
+.contact-title {
+  margin-bottom: 16px;
 }
 
 /* footer */
