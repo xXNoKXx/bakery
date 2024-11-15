@@ -53,6 +53,8 @@
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -100,7 +102,6 @@ p {
 
 .link-list:hover {
   color: var(--color-brand);
-  font-weight: 600;
 }
 
 .button {
@@ -116,6 +117,30 @@ p {
 .button:hover {
   color: var(--color-secondary);
   background-color: transparent;
+}
+
+.header {
+  background-color: rgb(206, 129, 28);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+
+.menu-items {
+  display: flex;
+  gap: 64px;
+  flex-grow: 1;
+  justify-content: center;
 }
 
 /* hero */
@@ -136,9 +161,19 @@ p {
 
 /* advantage */
 
+.advantage-section {
+  background-color: var(--color-brand);
+  padding: 16px 0;
+}
+
 .advantage {
   color: var(--color-primary-light);
-  background-color: var(--color-brand);
+}
+
+.advantage-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
 }
 
 /* advantage-text */
@@ -157,6 +192,7 @@ p {
   font-weight: 900;
   font-size: 64px;
   line-height: 1.3;
+  text-align: center;
 }
 
 .main-title .accent {
@@ -175,6 +211,17 @@ p {
   height: 1px; /* Уменьшаем размер элемента */
   margin: 0;
   padding: 0;
+}
+
+.tradition-text {
+  margin-bottom: 42px;
+}
+.tradition-text:last-child {
+  max-width: 336px;
+}
+
+.tradition-text:nth-child(2) {
+  max-width: 620px;
 }
 
 .tradition-text .tradition-accent {
@@ -196,6 +243,17 @@ p {
   margin-bottom: 42px;
 }
 
+.tradition-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.tradition-content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 708px;
+}
 /* section-chef */
 .chef {
   text-align: center;
@@ -226,6 +284,22 @@ p {
 
 .fotmat-title {
   margin-bottom: 80px;
+}
+
+.format-card {
+  border: 1px solid var(--color-brand);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.format-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.formats-item {
+  flex-basis: calc((100% - 40px) / 3);
 }
 
 /* contact-title */
