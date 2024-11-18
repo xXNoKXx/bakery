@@ -342,6 +342,25 @@ p {
   flex-basis: calc((100% - 40px) / 3);
 }
 
+.format-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--color-primary-dark);
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.format-arrow:hover {
+  fill: var(--color-primary-light);
+  background-color: var(--color-primary-dark);
+}
+
 /* contact-title */
 
 .contact-title {
@@ -360,6 +379,13 @@ p {
   color: var(--color-brand);
 }
 
+.address-icons {
+  fill: var(--color-primary-light);
+}
+
+.address-icons:hover {
+  fill: var(--color-brand);
+}
 .protected {
   color: #a18268;
 }
