@@ -301,7 +301,29 @@ p {
     -16px 16px 0 2px #a18268;
 }
 
+.chef-list {
+  display: flex;
+  gap: 30px;
+}
+
+.chef-card {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-item {
+  gap: 30px;
+  display: flex;
+}
+
 /* section-frmat */
+
+.flex-container {
+  display: flex;
+  align-items: center;
+
+  gap: 32px;
+}
+
 .formats-title {
   font-weight: 600;
   font-size: 24px;
@@ -354,6 +376,7 @@ p {
   fill: var(--color-primary-dark);
   background-color: transparent;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .format-arrow:hover {
