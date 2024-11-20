@@ -126,6 +126,7 @@ p {
 
 .header {
   background-color: rgb(206, 129, 28);
+  /* удалить */
 }
 
 .header-container {
@@ -264,6 +265,15 @@ p {
   flex-basis: 708px;
 }
 /* section-chef */
+
+.chef-paragraph p {
+  margin-bottom: 24px;
+}
+
+.chef-paragraph p:last-child {
+  margin-bottom: 0;
+}
+
 .chef {
   text-align: center;
 }
@@ -273,10 +283,10 @@ p {
 .article-title {
   font-weight: 600;
   font-size: 60px;
+  margin-bottom: 16px;
 }
 
 .chef-title {
-  margin-bottom: 80px;
   max-width: 560px;
   margin: 0 auto 80px;
 }
