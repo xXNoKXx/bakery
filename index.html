@@ -169,78 +169,96 @@
           </div>
         </div>
       </section>
-      <section class="section" id="contact">
+      <section class="section-contact section" id="contact">
         <div class="container">
-          <h2 class="main-title contact-title">
-            Приєднуйся до мережі пекарень
-          </h2>
-          <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0520030613407!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e1!3m2!1sru!2sua!4v1731164085193!5m2!1sru!2sua"
-            width="603"
-            height="559"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div>
+              <h2 class="main-title contact-title">
+                Приєднуйся до мережі пекарень
+              </h2>
+              <p>Заповни форму, щоб ми звʼязались з тобою!</p>
+              <!-- заполнять форму -->
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0520030613407!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA1NCwg0JrQuNC10LIsIDAyMDAw!5e1!3m2!1sru!2sua!4v1731164085193!5m2!1sru!2sua"
+              width="603"
+              height="559"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="#">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
-        <nav>
-          <ul>
-            <li><a class="link-list" href="#tradition">Наші традиції</a></li>
-            <li><a class="link-list" href="#chef">Шеф-кухарі</a></li>
-            <li><a class="link-list" href="#format">Формати</a></li>
-            <li><a class="link-list" href="#contact">Контакти</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-list" href="tel: + 380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a class="address-list" href="meilto shopbakery@gmail.com"
-                >shopbakery@gmail.com</a
-              >
-            </li>
-            <li>
-              <a
-                class="address-list"
-                href="https://maps.app.goo.gl/9Fg7QD9qSsgD4t2t7"
-                target="_blank"
-                >Україна, м. Київ, вул. Січових Стрільців 54</a
-              >
-            </li>
-            <li>
+        <div class="footer-container">
+          <div class="footer-nav">
+            <div class="nav-logo">
               <a href="#">
-                <svg class="address-icons" weight="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
+                <img src="./images/logo.svg" alt="logo" />
               </a>
-            </li>
+            </div>
+            <nav class="nav-list">
+              <ul>
+                <li>
+                  <a class="link-list" href="#tradition">Наші традиції</a>
+                </li>
+                <li><a class="link-list" href="#chef">Шеф-кухарі</a></li>
+                <li><a class="link-list" href="#format">Формати</a></li>
+                <li><a class="link-list" href="#contact">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer-address">
+            <address class="address-link">
+              <ul>
+                <li>
+                  <a class="address-list" href="tel: + 380960000007"
+                    >+ 38 (096) 000 00 07</a
+                  >
+                </li>
+                <li>
+                  <a class="address-list" href="meilto shopbakery@gmail.com"
+                    >shopbakery@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="address-list"
+                    href="https://maps.app.goo.gl/9Fg7QD9qSsgD4t2t7"
+                    target="_blank"
+                    >Україна, м. Київ, вул. Січових Стрільців 54</a
+                  >
+                </li>
+                <li>
+                  <a href="#">
+                    <svg class="address-icons" weight="32" height="32">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
 
-            <li>
-              <a href="#">
-                <svg class="address-icons" weight="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="address-list" href="#" target="_blank"
-            >Політика конфіденційності</a
-          >
-        </address>
-        <p class="protected">&COPY; 2022 Дані захищені</p>
+                <li>
+                  <a href="#">
+                    <svg class="address-icons" weight="32" height="32">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </address>
+            <div class="protected-list">
+              <a class="address-list" href="#" target="_blank"
+                >Політика конфіденційності</a
+              >
+              <p class="protected">&COPY; 2022 Дані захищені</p>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
