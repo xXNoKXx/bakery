@@ -22,7 +22,9 @@
               <li><a class="link-list" href="#contact">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
         </div>
       </div>
     </header>
@@ -72,7 +74,8 @@
       <section class="section" class="chef" id="chef">
         <div class="container">
           <h2 class="main-title chef-title">
-            Наші найкращі <span class="accent-dark">шеф-кухарі</span>
+            Наші найкращі <br />
+            <span class="accent-dark">шеф-кухарі</span>
           </h2>
           <ul class="chef-list">
             <li class="chef-card">
@@ -267,5 +270,13 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">close</button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

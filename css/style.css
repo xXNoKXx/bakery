@@ -84,6 +84,10 @@ p {
   margin-top: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .section {
   padding: 48px 0;
 }
@@ -287,22 +291,26 @@ p {
 }
 
 .chef-title {
-  max-width: 560px;
+  position: relative;
   margin: 0 auto 80px;
 }
 
-.chef-title::before {
+.chef-title::before,
+.chef-title::after {
+  bottom: 24px;
   display: block;
   content: "";
   border: 2px solid var(--color-light);
   width: 352px;
+  position: absolute;
+}
+
+.chef-title::before {
+  left: 0;
 }
 
 .chef-title::after {
-  display: block;
-  content: "";
-  border: 2px solid var(--color-light);
-  width: 352px;
+  right: 0;
 }
 
 .chefs-photo {
@@ -463,4 +471,61 @@ p {
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+}
+
+.footer::before,
+.footer::after {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer::before {
+  background-image: url(../images/footer-small-bread.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url(../images/footer-great-bread.png);
+  width: 380px;
+  height: 190px;
+  right: 0;
+}
+
+/* modal */
+
+.backdrop {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  position: relative;
+  width: 880px;
+  height: 880px;
+  background-color: var(--color-primary-light);
+  border-radius: 32px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 56px;
+  right: 48px;
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
