@@ -107,6 +107,7 @@ a {
 .link-list {
   color: var(--color-primary-light);
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .link-list:hover {
@@ -121,6 +122,7 @@ a {
   cursor: pointer;
   font-weight: 600;
   padding: 16px 32px;
+  transition: 0.3s;
 }
 
 .button:hover {
@@ -129,8 +131,11 @@ a {
 }
 
 .header {
-  background-color: rgb(206, 129, 28);
-  /* удалить */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
 }
 
 .header-container {
@@ -156,7 +161,13 @@ a {
 /* hero */
 .hero-section {
   padding: 272px 0;
-  background-image: url(../images/hero-section.jpg);
+  background-image: linear-gradient(
+      127deg,
+      rgba(18, 18, 17, 0.78) 0%,
+      rgba(18, 18, 17, 0.6) 63.89%,
+      rgba(18, 18, 17, 0) 100%
+    ),
+    url(../images/hero-section.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -339,7 +350,6 @@ a {
 .flex-container {
   display: flex;
   align-items: center;
-
   gap: 32px;
 }
 
@@ -354,7 +364,7 @@ a {
   font-size: 14px;
 }
 
-.fotmat-title {
+.format-title {
   margin-bottom: 80px;
 }
 
@@ -370,6 +380,11 @@ a {
     rgba(49, 38, 26, 0.71) 72.92%,
     #31261a 100%
   );
+  transition: 0.3s;
+}
+
+.format-card:hover {
+  transform: scale(1.05);
 }
 
 .format-container {
@@ -396,6 +411,10 @@ a {
   background-color: transparent;
   cursor: pointer;
   flex-shrink: 0;
+}
+
+.format-arrow.next {
+  transform: rotate(180deg);
 }
 
 .format-arrow:hover {
@@ -508,12 +527,15 @@ a {
   background-color: rgb(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal {
   position: relative;
-  width: 880px;
-  height: 880px;
+  max-width: 880px;
+  width: 100%;
+  max-height: 880px;
+  height: 100%;
   background-color: var(--color-primary-light);
   border-radius: 32px;
 }
