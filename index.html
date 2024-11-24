@@ -65,6 +65,7 @@
               </p>
             </div>
             <img
+              class="tradition-photo"
               src="./images/man-with-bread.jpg"
               alt="мужик с батоном тянет лыбу"
             />
@@ -186,7 +187,51 @@
                 Приєднуйся до мережі пекарень
               </h2>
               <p>Заповни форму, щоб ми звʼязались з тобою!</p>
-              <!-- заполнять форму -->
+              <form name="contact-form" autocomplete="off">
+                <div>
+                  <label class="visibility-hidden" for="user-name">Ім’я</label>
+                  <input
+                    placeholder="Ім’я"
+                    class="contact-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                  />
+                </div>
+                <div>
+                  <label class="visibility-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    placeholder="Телефон"
+                    class="contact-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                  />
+                </div>
+                <div>
+                  <label class="visibility-hidden" for="user-email"
+                    >Електронна пошта</label
+                  >
+                  <input
+                    placeholder="Електронна"
+                    class="contact-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                  />
+                </div>
+                <button class="button button-form" type="submit">
+                  Замовити дзвінок
+                </button>
+                <p class="form-terms">
+                  Натискаючи на кнопку я погоджуюсь
+                  <a class="form-terms-link" href="#"
+                    >з політикою конфіденційності</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -274,6 +319,51 @@
     <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">close</button>
+        <form name="contact-form" novalidate autocomplete="off">
+          <h2 class="modal-title">Замовити дзвінок</h2>
+          <p class="form-text">
+            Залишіть заявку та наш спеціаліст зв'яжеться з Вами!
+          </p>
+          <div>
+            <label class="visibility-hidden" for="user-name">Ім’я</label>
+            <input
+              placeholder="Ім’я"
+              class="contact-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+            />
+          </div>
+          <div>
+            <label class="visibility-hidden" for="user-tel">Телефон</label>
+            <input
+              placeholder="Телефон"
+              class="contact-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+            />
+          </div>
+          <div>
+            <label class="visibility-hidden" for="user-email"
+              >Електронна пошта</label
+            >
+            <input
+              placeholder="Електронна"
+              class="contact-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+            />
+          </div>
+          <button class="button button-form" type="submit">
+            Замовити дзвінок
+          </button>
+          <p class="form-terms">
+            Натискаючи на кнопку я погоджуюсь
+            <a class="form-terms-link" href="#">з політикою конфіденційності</a>
+          </p>
+        </form>
       </div>
     </div>
 

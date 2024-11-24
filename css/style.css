@@ -103,6 +103,15 @@ a {
   background-color: var(--color-primary-light);
 }
 
+.visibility-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+}
+
 /* heder */
 .link-list {
   color: var(--color-primary-light);
@@ -229,15 +238,6 @@ a {
 
 /* section-tradition */
 
-.visibility-hidden {
-  position: absolute;
-  clip: rect(0, 0, 0, 0); /* Скрывает текст за пределами видимой области */
-  width: 1px; /* Уменьшаем размер элемента */
-  height: 1px; /* Уменьшаем размер элемента */
-  margin: 0;
-  padding: 0;
-}
-
 .tradition-text {
   margin-bottom: 42px;
 }
@@ -278,6 +278,10 @@ a {
   display: flex;
   flex-direction: column;
   flex-basis: 708px;
+}
+
+.tradition-photo {
+  border-radius: 400px 400px 0 0;
 }
 /* section-chef */
 
@@ -538,6 +542,8 @@ a {
   height: 100%;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  padding: 128px;
+  overflow-y: auto;
 }
 
 .modal-btn-close {
@@ -550,4 +556,61 @@ a {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+}
+
+.modal-title {
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.3;
+  margin: 0 auto 8px;
+  text-wrap: nowrap;
+}
+
+.form-text {
+  text-align: center;
+  color: var(--color-secondary);
+  margin-bottom: 72px;
+}
+
+.contact-input {
+  border: 1px solid #a18268;
+  border-radius: 8px;
+  width: 100%;
+  padding: 16px 42px;
+  background-color: transparent;
+  margin-bottom: 32px;
+}
+
+.contact-input:focus {
+  border-color: var(--color-brand);
+  outline: none;
+}
+
+.contact-input:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+
+.contact-input::placeholder {
+  color: #a18268;
+}
+
+.button-form {
+  margin: 0 auto;
+  margin-bottom: 24px;
+  display: block;
+}
+
+.form-terms {
+  font-weight: 500;
+  font-size: 16px;
+  width: 270px;
+  height: 40px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 4px;
+  text-decoration: underline;
 }
