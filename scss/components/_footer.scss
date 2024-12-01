@@ -1,0 +1,68 @@
+.protected-list,
+.nav-logo,
+.nav-list,
+.address-link {
+  flex-grow: 1;
+}
+
+.footer-address,
+.footer-nav {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.footer-container {
+  display: flex;
+  padding: 32px 0;
+}
+
+.address-list {
+  color: var(--color-primary-light);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.address-list:hover {
+  color: var(--color-brand);
+}
+
+.address-icons {
+  fill: var(--color-primary-light);
+}
+
+.address-icons:hover {
+  fill: var(--color-brand);
+}
+.protected {
+  color: #a18268;
+}
+
+.footer {
+  background-image: url(../images/footer.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.footer::before,
+.footer::after {
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer::before {
+  background-image: url(../images/footer-small-bread.png);
+  width: 180px;
+  height: 120px;
+  left: 0;
+}
+
+.footer::after {
+  background-image: url(../images/footer-great-bread.png);
+  width: 380px;
+  height: 190px;
+  right: 0;
+}

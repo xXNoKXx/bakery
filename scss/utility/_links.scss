@@ -1,0 +1,9 @@
+.link-list {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link-list:hover {
+  color: var(--color-brand);
+}

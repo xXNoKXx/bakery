@@ -1,0 +1,63 @@
+.chef-paragraph p {
+  margin-bottom: 24px;
+}
+
+.chef-paragraph p:last-child {
+  margin-bottom: 0;
+}
+
+.chef {
+  text-align: center;
+}
+.chef-text {
+  text-transform: uppercase;
+}
+.article-title {
+  font-weight: 600;
+  font-size: 60px;
+  margin-bottom: 16px;
+}
+
+.chef-title {
+  position: relative;
+  margin: 0 auto 80px;
+}
+
+.chef-title::before,
+.chef-title::after {
+  bottom: 24px;
+  display: block;
+  content: "";
+  border: 2px solid var(--color-light);
+  width: 352px;
+  position: absolute;
+}
+
+.chef-title::before {
+  left: 0;
+}
+
+.chef-title::after {
+  right: 0;
+}
+
+.chefs-photo {
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px #a18268;
+}
+
+.chef-list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+}
+
+.chef-card {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-item {
+  gap: 30px;
+  display: flex;
+}
